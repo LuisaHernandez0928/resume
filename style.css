@@ -14,7 +14,7 @@ header {
   width: 100%;
   height: 35%;
   box-sizing: border-box;
-  background-color: black;
+  background-color: rgb(29, 28, 28);
   color: white;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -36,9 +36,23 @@ header {
   height: 80px;
   border-radius: 50%;
 }
-h1,h6{
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+h1,h2,h6 {
   margin: 0;
 }
+
+h1 {
+  font-size: 2.4rem;
+}
+h2{
+  font-size: 1.2rem;
+}
+
 .professional-social-media {
   display: flex;
   flex-direction: row;
@@ -48,11 +62,12 @@ h1,h6{
   height: 20%;
   box-sizing: border-box;
 }
-nav > div {
+
+nav>div {
   width: fit-content;
   display: flex;
   margin-left: 10px;
-  margin-right: 10px ;
+  margin-right: 10px;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -64,4 +79,56 @@ nav > div {
 
 .portfolio {
   padding-left: 10px;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  width: 97%;
+  padding: 10px;
+  height: fit-content;
+  box-sizing: border-box;
+  margin: 1.5rem;
+  border-top:  0.2rem solid rgb(80, 77, 77);;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  box-sizing: border-box;
+  padding: 20px 10px 20px 0px;
+  width: fit-content;
+  border-right: 0.2rem solid rgb(80, 77, 77);
+
+}
+
+aside>section {
+  height: fit-content;
+}
+
+aside>section> ul {
+  margin-top: 1.5rem 0;
+  text-decoration: none;
+}
+
+.noFirstSection{
+  margin-top: 3rem;
+}
+aside>section>ul>li {
+  padding-top: 12px;
+  box-sizing: border-box;
+}
+
+.labor-education {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 70%;
+  height: fit-content;
+  box-sizing: border-box;
+  padding: 20px 20px 20px 20px;
+
 }
