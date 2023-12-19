@@ -40,6 +40,7 @@ header {
 a {
   text-decoration: none;
   color: white;
+  cursor: pointer;
 }
 
 h1, h2, h6 {
@@ -182,4 +183,79 @@ footer>div {
 
 footer>div>span {
   padding-right: 0.5rem;
+}
+
+@media (max-width: 500px) {
+  html, body{
+    width: 100vh;
+    height: 100vh;
+  }
+  * {
+    font-size: 1rem;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    width: 100vh;
+    box-sizing: border-box;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+  .introduction{
+    width: fit-content;
+  }
+
+  .professional-social-media{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: fit-content;
+    padding-top: 2rem;
+  }
+
+  .introduction>img {
+    width: 8rem;
+    height: 8rem;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  h2{
+    font-size: 1rem;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vh;
+    padding: 1rem;
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 85vh;
+    height: fit-content;
+    position: relative;
+    padding: 0;
+    box-sizing: border-box;
+    border-bottom: 0.2rem solid rgb(80, 77, 77);
+  }
+
+  .labor-education{
+    width: 100vh;
+    height: fit-content;
+    box-sizing: border-box;
+    width: 85vh;
+  }
+
 }
