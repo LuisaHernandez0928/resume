@@ -84,12 +84,12 @@ nav>div {
 main {
   display: flex;
   flex-direction: row;
-  width: 97%;
-  padding: 10px;
+  justify-content: center;
+  width: 100%;
+  padding: 1.5rem;
   height: fit-content;
   box-sizing: border-box;
-  margin: 1.5rem;
-  border-top:  0.2rem solid rgb(80, 77, 77);;
+  border-top:  0.2rem solid rgb(80, 77, 77);
 }
 
 aside {
@@ -98,7 +98,7 @@ aside {
   justify-content: flex-start;
   align-items: flex-start;
   box-sizing: border-box;
-  padding: 20px 10px 20px 0px;
+  padding: 1.5rem;
   width: fit-content;
   border-right: 0.2rem solid rgb(80, 77, 77);
 
@@ -126,9 +126,21 @@ aside>section>ul>li {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  width: 70%;
+  width: 55rem;
   height: fit-content;
   box-sizing: border-box;
   padding: 20px 20px 20px 20px;
+}
 
+.labor-education > section {
+  height: fit-content;
+  padding-bottom: 3rem;
+}
+
+.labor-education > .noLastOne {
+  border-bottom:  0.1rem solid rgb(80, 77, 77);;
+}
+
+.labor-education > .noFirstOne {
+  padding-top: 2rem;
 }
