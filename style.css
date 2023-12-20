@@ -64,8 +64,9 @@ h2 {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 20%;
+  height: fit-content;
   box-sizing: border-box;
+  padding: 1.5rem 0;
 }
 
 nav>div {
@@ -190,7 +191,7 @@ footer>div>span {
 
 @media (max-width: 920px) {
   html, body{
-    width: 100vh;
+    width: 100vw;
     height: fit-content;
   }
   * {
@@ -199,7 +200,7 @@ footer>div>span {
   header {
     display: flex;
     flex-direction: column;
-    width: 100vh;
+    width: 100vw;
     box-sizing: border-box;
     height: fit-content;
     align-items: center;
@@ -211,8 +212,7 @@ footer>div>span {
     height: 8rem;
   }
   main {
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    margin-top: 1.5rem 0;
   }
 
   footer{
@@ -226,7 +226,7 @@ footer>div>span {
 
 @media (max-width: 500px) {
   html, body{
-    width: 100vh;
+    width: 100vw;
     height: fit-content;
   }
   * {
@@ -235,7 +235,7 @@ footer>div>span {
   header {
     display: flex;
     flex-direction: column;
-    width: 100vh;
+    width: 100vw;
     box-sizing: border-box;
     height: fit-content;
     align-items: center;
@@ -276,7 +276,7 @@ footer>div>span {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100vh;
+    width: 100vw;
     padding: 1rem;
     height: fit-content;
     box-sizing: border-box;
@@ -288,19 +288,20 @@ footer>div>span {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 85vh;
+    width: 85vw;
     height: fit-content;
     position: relative;
     padding: 0;
     box-sizing: border-box;
     border-bottom: 0.2rem solid rgb(80, 77, 77);
+    border-right: none;
   }
 
   .labor-education{
-    width: 100vh;
+    width: 100vw;
     height: fit-content;
     box-sizing: border-box;
-    width: 85vh;
+    width: 85vw;
   }
 
   .labor-education>section {
