@@ -46,7 +46,7 @@ a {
   cursor: pointer;
 }
 
-h1, h2, h6 {
+h1, h2, h6, h4 {
   margin: 0;
 }
 
@@ -154,7 +154,20 @@ aside>section>ul>li {
   padding-top: 2rem;
 }
 
+.education>section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: fit-content;
+  padding: 0;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
 .education>section>div {
+  padding: 0;
+  height: fit-content;
   display: flex;
   width: 100%;
   flex-direction: row;
@@ -190,13 +203,15 @@ footer>div>span {
 }
 
 @media (max-width: 920px) {
-  html, body{
+  html, body {
     width: 100vw;
     height: fit-content;
   }
+
   * {
     font-size: 1.1rem;
   }
+
   header {
     display: flex;
     flex-direction: column;
@@ -207,15 +222,17 @@ footer>div>span {
     justify-content: center;
     padding: 1rem;
   }
+
   .introduction>img {
     width: 8rem;
     height: 8rem;
   }
+
   main {
     margin-top: 1.5rem 0;
   }
 
-  footer{
+  footer {
     position: relative;
     bottom: 0;
     left: 0;
@@ -224,14 +241,16 @@ footer>div>span {
 
 }
 
-@media (max-width: 500px) {
-  html, body{
+@media (max-width: 550px) {
+  html, body {
     width: 100vw;
     height: fit-content;
   }
+
   * {
     font-size: 1rem;
   }
+
   header {
     display: flex;
     flex-direction: column;
@@ -242,14 +261,15 @@ footer>div>span {
     justify-content: center;
     padding: 1rem;
   }
-  .introduction{
+
+  .introduction {
     width: fit-content;
     padding-bottom: 1rem;
     box-sizing: border-box;
     height: fit-content;
   }
 
-  .professional-social-media{
+  .professional-social-media {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -267,7 +287,7 @@ footer>div>span {
     font-size: 1.3rem;
   }
 
-  h2{
+  h2 {
     font-size: 1rem;
   }
 
@@ -297,7 +317,11 @@ footer>div>span {
     border-right: none;
   }
 
-  .labor-education{
+  .noFirstSection {
+    margin-top: 1rem;
+  }
+
+  .labor-education {
     width: 100vw;
     height: fit-content;
     box-sizing: border-box;
@@ -307,7 +331,8 @@ footer>div>span {
   .labor-education>section {
     height: fit-content;
   }
-  footer{
+
+  footer {
     position: relative;
     bottom: 0;
     left: 0;
